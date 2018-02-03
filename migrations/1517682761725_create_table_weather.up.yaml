@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "weather"("ms" integer NOT NULL, "me" integer NOT NULL, "cropna"
+      text NOT NULL, PRIMARY KEY ("ms") )
+  type: run_sql
+- args:
+    name: weather
+  type: add_existing_table_or_view

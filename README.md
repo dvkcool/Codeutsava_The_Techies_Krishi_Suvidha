@@ -26,7 +26,7 @@ CMD ["node", "server.js"]
 ### Basic deployment:
 
 * Press the **Clone & Deploy** button and follow the instructions.
-* The `hasura quickstart` command clones the project repository to your local computer, and also creates a **free Hasura cluster**, where the project will be hosted for free.
+* The `hasura quickstart` command cscscscscones the project repository to your local computer, and also creates a **free Hasura cluster**, where the project will be hosted for free.
 * A git remote (called hasura) is created and initialized with your project directory.
 * Run `git add .`, `git commit`, and `git push hasura master`.
 * Run the below command to open your deployed express.js app.
