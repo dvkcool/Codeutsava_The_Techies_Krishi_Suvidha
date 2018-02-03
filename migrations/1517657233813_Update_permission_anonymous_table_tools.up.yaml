@@ -1,0 +1,16 @@
+- args:
+    role: anonymous
+    table: tools
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - name
+      - seller
+      - price
+      - image
+      - id
+      filter: {}
+    role: anonymous
+    table: tools
+  type: create_select_permission
