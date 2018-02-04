@@ -1,0 +1,11 @@
+- args:
+    permission:
+      columns:
+      - prod
+      - cropna
+      - spa
+      - plants
+      filter: {}
+    role: anonymous
+    table: calculator
+  type: create_select_permission

@@ -1,0 +1,7 @@
+- args:
+    sql: CREATE TABLE "calculator"("cropna" text NOT NULL, "spa" integer NOT NULL,
+      "plants" text NOT NULL, "prod" text NOT NULL, PRIMARY KEY ("cropna") )
+  type: run_sql
+- args:
+    name: calculator
+  type: add_existing_table_or_view
