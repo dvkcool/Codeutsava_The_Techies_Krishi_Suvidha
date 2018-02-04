@@ -2,7 +2,7 @@
 
 
 ## Front end repository
-[!Repo}(https://github.com/dvkcool/Codeutsava_frontend_react)
+[!Repo](https://github.com/dvkcool/Codeutsava_frontend_react)
 
 ## What does this come with?
 
