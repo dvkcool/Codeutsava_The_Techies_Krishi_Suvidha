@@ -10,17 +10,17 @@ The source code of front end is present [here](https://github.com/dvkcool/Codeut
 
 1. Weather forecasting using Forecast api.
 ______________________
-![demo1](https://github.com/dvkcool/Codeutsava_frontend_react/demo/sc1.png)
+![demo1](https://github.com/dvkcool/Codeutsava_frontend_react/blob/master/demo/sc1.png)
 _______________
 
 2. Using Market sale using stripe.
 ___________________
-![demo2](https://github.com/dvkcool/Codeutsava_frontend_react/demo/sc2.png)
+![demo2](https://github.com/dvkcool/Codeutsava_frontend_react/blob/master/demo/sc2.png)
 _______________
 
 3. Using Seed count calculator.
 _________________
-![demo3](https://github.com/dvkcool/Codeutsava_frontend_react/demo/sc3.png)
+![demo3](https://github.com/dvkcool/Codeutsava_frontend_react/blob/master/demo/sc3.png)
 _______________
 
 
