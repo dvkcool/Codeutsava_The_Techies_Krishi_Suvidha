@@ -3,24 +3,24 @@ This is a basic application based on Hasura APIs and react-native for the basic 
 
 
 ## Front end source code
-The source code of front end is present in the `Codeutsava_frontend_react_native` folder.
+The source code of front end is present [here](https://github.com/dvkcool/Codeutsava_frontend_react)
 
 
 ## The problems it is solved:
 
 1. Weather forecasting using Forecast api.
 ______________________
-![demo1](./Codeutsava_frontend_react_native/demo/sc1.png)
+![demo1](https://github.com/dvkcool/Codeutsava_frontend_react/demo/sc1.png)
 _______________
 
 2. Using Market sale using stripe.
 ___________________
-![demo2](./Codeutsava_frontend_react_native/demo/sc2.png)
+![demo2](https://github.com/dvkcool/Codeutsava_frontend_react/demo/sc2.png)
 _______________
 
 3. Using Seed count calculator.
 _________________
-![demo3](./Codeutsava_frontend_react_native/demo/sc3.png)
+![demo3](https://github.com/dvkcool/Codeutsava_frontend_react/demo/sc3.png)
 _______________
 
 
