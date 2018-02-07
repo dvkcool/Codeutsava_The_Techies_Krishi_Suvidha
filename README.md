@@ -2,8 +2,9 @@
 This is a basic application based on Hasura APIs and react-native for the basic front end needs built for usability of National Federation of Farmers' Procurement, Processing and Retailing Cooperatives of India Ltd (NACOF)
 
 
-## Front end repository
-[!Repo](https://github.com/dvkcool/Codeutsava_frontend_react)
+## Front end source code
+The source code of front end is present in the `Codeutsava_frontend_react_native` folder.
+
 
 ## The problems it is solved:
 
