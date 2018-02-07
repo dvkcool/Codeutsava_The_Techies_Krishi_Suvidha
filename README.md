@@ -13,7 +13,7 @@ ______________________
 ![demo1](https://github.com/dvkcool/Codeutsava_frontend_react/blob/master/demo/sc1.png)
 _______________
 
-2. Using Market sale using stripe.
+2. Using Market sale.
 ___________________
 ![demo2](https://github.com/dvkcool/Codeutsava_frontend_react/blob/master/demo/sc2.png)
 _______________
