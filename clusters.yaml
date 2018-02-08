@@ -1,7 +1,7 @@
 - alias: hasura
   config:
     configmap: controller-conf
-    namespace: hospitalize60-hasura
+    namespace: conjoin72-hasura
   data: null
-  kubeContext: hospitalize60
-  name: hospitalize60
+  kubeContext: conjoin72
+  name: conjoin72
