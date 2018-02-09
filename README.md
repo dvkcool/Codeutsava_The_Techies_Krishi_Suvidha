@@ -69,7 +69,9 @@ Congratulations you got the app running.
 ## Hasura APIs used
 1. Auth API
    We used the Auth API for the login/signup part.
+   ____________________________
    ![login](https://github.com/dvkcool/Codeutsava_The_Techies_Krishi_Suvidha/blob/master/demo/login.png)
+   ______________________________
 
 2. The Data API
    For storing various data and retrieving it, we have used the Data APIs
@@ -134,9 +136,9 @@ password: 12345678
 Also you could signup to create your own credentials.
 The source code of front end is present in the native-app folder.
 ____________________
-The app can also be seen live [here](https://exp.host/@dvkcool/krishi-suvidha)
+## The app can also be seen live [here](https://exp.host/@dvkcool/krishi-suvidha)
 ___________________
-The APK file can also be found [here](https://drive.google.com/open?id=1RI7-7GiKOmwJm-xiS2ERdOpaSVG7pet6)
+## The APK file can also be found [here](https://drive.google.com/open?id=1RI7-7GiKOmwJm-xiS2ERdOpaSVG7pet6)
 ______________________
 
 ## The problems it is solved:
