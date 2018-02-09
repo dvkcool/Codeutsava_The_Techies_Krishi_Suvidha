@@ -133,7 +133,11 @@ password: 12345678
 ```
 Also you could signup to create your own credentials.
 The source code of front end is present in the native-app folder.
-
+____________________
+The app can also be seen live [here](https://exp.host/@dvkcool/krishi-suvidha)
+___________________
+The APK file can also be found [here](https://drive.google.com/open?id=1RI7-7GiKOmwJm-xiS2ERdOpaSVG7pet6)
+______________________
 
 ## The problems it is solved:
 

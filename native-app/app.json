@@ -3,7 +3,7 @@
    "name": "Krisi-suvidha",
    "icon": "./src/images/sikh.png",
    "version": "8.0.0",
-   "slug": "your-app-slug",
+   "slug": "krishi-suvidha",
    "sdkVersion": "25.0.0",
    "ios": {
      "bundleIdentifier": "com.dvk.krishisuvidha"
