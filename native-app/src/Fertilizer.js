@@ -79,7 +79,7 @@ GetItem (flower_name) {
           <Right/>
           </CardItem >
           <CardItem style={{paddingTop:0,}}>
-          <Image source = {{ uri: "https://filestore."+cluster.name+".hasura-app.io/v1/file/"+rowData.image }}
+          <Image source = {{ uri: "https://filestore."+cluster.name+"0.hasura-app.io/v1/file/"+rowData.image }}
             style={{height: 220, width: (Dimensions.get('window').width-50), flex: 0}}/>
           </CardItem>
           <CardItem style={{paddingTop:0, }}>

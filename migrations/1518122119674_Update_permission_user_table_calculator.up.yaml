@@ -1,0 +1,15 @@
+- args:
+    role: user
+    table: calculator
+  type: drop_select_permission
+- args:
+    permission:
+      columns:
+      - prod
+      - cropna
+      - spa
+      - plants
+      filter: {}
+    role: user
+    table: calculator
+  type: create_select_permission

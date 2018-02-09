@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
-import { View, Text,  Alert, Button, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text,  Alert, Button, TextInput, TouchableOpacity, Platform, Dimensions } from 'react-native';
+import {Card, CardItem, Thumbnail, H1 } from 'native-base';
 import Home from './src/Home';
 const cluster = require('./cluster.json');
 export default class App extends PureComponent{
@@ -10,7 +11,6 @@ export default class App extends PureComponent{
   }
 
   Signup = async () => {
-    Alert.alert("Login start", "Cluster name:"+cluster.name);
     fetch('https://auth.'+cluster.name+'.hasura-app.io/v1/signup', {
           method: 'post',
           headers: {
@@ -31,13 +31,13 @@ export default class App extends PureComponent{
           }
           else{
             this.setState({ auth_token: res.auth_token });
+            Alert.alert("Success", "You have succesfully signed up for Krishi- Suvidha");
           }
               }).catch((error) => {
                 console.error(error);
               });
   }
   Login = async () => {
-    Alert.alert("Login start");
     fetch('https://auth.'+cluster.name+'.hasura-app.io/v1/login', {
           method: 'post',
           headers: {
@@ -58,7 +58,7 @@ export default class App extends PureComponent{
           }
           else{
             this.setState({ auth_token: res.auth_token });
-            Alert.alert("Auth token: "+res.auth_token);
+            Alert.alert("Welcome", " You have succesfully logged in");
           }
               }).catch((error) => {
                 console.error(error);
@@ -67,9 +67,23 @@ export default class App extends PureComponent{
   render(){
     if(this.state.auth_token==''){
         return(
+
           <View style={{
-            paddingTop: 50,
+             paddingTop: Platform.OS === 'ios' ? 0 : Expo.Constants.statusBarHeight,
+             justifyContent: 'center',
+             alignItems: 'center',
+             justifyContent: 'space-between',
+             flex: 1,
           }}>
+          <View style={{flex: 1,
+                        justifyContent: 'center',
+                        alignItems: 'center',}}>
+          <Thumbnail  source={require('./src/images/sikh.png')}/>
+          <H1 style ={{justifyContent: 'center',  alignItems: 'center', paddingLeft: 10}}> Please login or signup to use</H1><H1> Krishi-suvidha </H1>
+          </View>
+          <View style={{flex: 2}}>
+          <Card style={{width: (Dimensions.get('window').width-50), flex:0 }}>
+
           <TextInput
            placeholder="Enter User name"
            onChangeText={ TextInputValue => this.setState({ username : TextInputValue }) }
@@ -81,9 +95,12 @@ export default class App extends PureComponent{
                marginBottom: 7,
                height: 40,
                borderRadius: 5 ,
+               fontSize: 20,
            }
          }
          />
+         </Card>
+         <Card style={{width: (Dimensions.get('window').width-50), flex:0, }}>
          <TextInput
           placeholder="Enter password"
           onChangeText={ TextInputValue => this.setState({ password : TextInputValue }) }
@@ -95,21 +112,48 @@ export default class App extends PureComponent{
               marginBottom: 7,
               height: 40,
               borderRadius: 5 ,
+              fontSize: 20,
           }
+
         }
+        secureTextEntry={true}
+
         />
-        <Button
-          onPress={this.Signup.bind(this)}
-          title="Signup"
-          color="#841584"
-          accessibilityLabel="Click to Signup"
-        />
-        <Button
-          onPress={this.Login.bind(this)}
-          title="Signup"
-          color="#841584"
-          accessibilityLabel="Click to Signup"
-        />
+        </Card>
+
+        <Card style={{width: (Dimensions.get('window').width-50), flex:0, }}>
+        <TouchableOpacity onPress={this.Signup.bind(this)}>
+        <View style={{height: 50, backgroundColor: 'purple',justifyContent: 'center',
+        alignItems: 'center',}}>
+        <Text style={{
+          fontSize: 20,
+          color: '#FFFFFF',
+        }}> Signup</Text></View>
+        </TouchableOpacity>
+        </Card>
+
+        <Card style={{width: (Dimensions.get('window').width-50), flex:0, }}>
+        <TouchableOpacity onPress={this.Login.bind(this)}>
+        <View style={{height: 50, backgroundColor: 'purple',justifyContent: 'center',
+        alignItems: 'center',}}>
+        <Text style={{
+          fontSize: 20,
+          color: '#FFFFFF',
+        }}> Login </Text></View>
+        </TouchableOpacity>
+        </Card>
+        </View>
+        <View style={{
+          justifyContent: 'center',
+          alignItems: 'center',}}>
+        <Text style={{
+          fontSize: 15
+        }}> Powered by </Text>
+        <Thumbnail  source={require('./src/images/hasura.png')}/>
+        <Text style={{
+          fontSize: 15,
+        }}> Hasura</Text>
+        </View>
           </View>
         );
       }

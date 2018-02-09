@@ -4,12 +4,13 @@ import { Container, Content, Text, Header, Footer, Tab, Tabs, TabHeading, Icon, 
           Right, Body, Thumbnail, Title, Item, Card, Input, Button, StyleProvider, Fab  } from 'native-base';
 import { StackNavigator } from 'react-navigation';
 import {AppLoading } from 'expo';
-import Homescr from './Homescreen';
-import Notification from './Notification';
-import Messages from './Messages';
+import Toolscr from './Toolscr';
+import Ferscr from './Fertilizer';
+import Eqpscr from './Eqpscr';
 import getTheme from './../native-base-theme/components';
 import material from './../native-base-theme/variables/material';
 import Entypo from 'react-native-vector-icons/Entypo';
+const cluster = require('./../cluster.json');
 export default class Mainsc extends Component {
   state = {
     fontLoaded: false,
@@ -47,13 +48,13 @@ else{
        </Header>
        <Tabs>
        <Tab heading={ <TabHeading><Icon name="ios-build" /><Text> Tools </Text></TabHeading>}>
-       <Homescr />
+       <Toolscr />
        </Tab>
        <Tab heading={ <TabHeading><Icon name="ios-cog" /><Text> Equipments </Text></TabHeading>}>
-       <Notification/>
+       <Eqpscr/>
        </Tab>
        <Tab heading={ <TabHeading><Icon name="ios-color-fill" /><Text> Fertilizer </Text></TabHeading>}>
-       <Messages/>
+       <Ferscr/>
        </Tab>
        </Tabs>
        <View>

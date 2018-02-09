@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import * as Animatable from 'react-native-animatable';
 import { AppRegistry, StyleSheet, ActivityIndicator,
   ListView, Alert, Dimensions, View, TextInput,Image, Platform, Linking, Button} from 'react-native';
-
+const cluster = require('./../cluster.json');
 import {Thumbnail, Container, Content, Left, Right, Text, Body, Card, CardItem} from 'native-base';
 
 
@@ -24,7 +24,7 @@ GetItem (flower_name) {
  }
 
  getcropna= async () => {
-   return fetch('https://data.hospitalize60.hasura-app.io/v1/query', {
+   return fetch('https://data.'+cluster.name+'.hasura-app.io/v1/query', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ GetItem (flower_name) {
           <Button
             title="Find Crop"
              text="Find month"
-             onPress={this.getcropna}
+             onPress={this.getcropna.bind(this)}
            />
           </CardItem>
           <CardItem>

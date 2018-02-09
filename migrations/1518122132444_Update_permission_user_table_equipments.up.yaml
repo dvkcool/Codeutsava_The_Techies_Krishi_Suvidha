@@ -1,0 +1,12 @@
+- args:
+    permission:
+      columns:
+      - id
+      - name
+      - seller
+      - price
+      - imageid
+      filter: {}
+    role: user
+    table: equipments
+  type: create_select_permission

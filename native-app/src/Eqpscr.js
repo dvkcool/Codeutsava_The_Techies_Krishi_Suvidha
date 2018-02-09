@@ -44,7 +44,6 @@ GetItem (flower_name) {
            }, function() {
              // In this block you can do something with new state.
            });
-           Alert.alert("Res1"+"body: "+responseJson[0].name);
          })
          .catch((error) => {
            console.error(error);

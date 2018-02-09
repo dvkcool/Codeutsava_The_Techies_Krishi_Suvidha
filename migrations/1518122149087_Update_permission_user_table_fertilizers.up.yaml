@@ -1,0 +1,12 @@
+- args:
+    permission:
+      columns:
+      - id
+      - name
+      - seller
+      - price
+      - image
+      filter: {}
+    role: user
+    table: fertilizers
+  type: create_select_permission

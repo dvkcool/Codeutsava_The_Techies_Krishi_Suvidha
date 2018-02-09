@@ -1,0 +1,10 @@
+- args:
+    permission:
+      columns:
+      - ms
+      - me
+      - cropna
+      filter: {}
+    role: user
+    table: weather
+  type: create_select_permission
